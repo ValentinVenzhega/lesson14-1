@@ -22,11 +22,8 @@ class DomElement {
          p.textContent = 'Maxime deleniti id, velit similique voluptatibus iure doloribus ab a quam.';
          p.style.cssText = `background: ${this.bg}; height: ${this.height}; width: ${this.width}; font-size: ${this.fontSize}`;
       }
-   } fun () {
-      
-   }
+   } 
 }
 
 const domElement = new DomElement('#block', '60px', '600px', 'green', '25px');
 domElement.getCreate();
-
