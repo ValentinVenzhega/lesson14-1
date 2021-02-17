@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
             switch(event.code) {
                case 'ArrowLeft':
                   if (left > 0) {
-                     left = left - 10;
+                     left -= 10;
                      div.style.left = left + 'px';
                   } else {
                      left = 0;
@@ -26,12 +26,12 @@ document.addEventListener("DOMContentLoaded", function(event) {
                   }
                   break;
                case 'ArrowRight':
-                  left = left + 10;
+                  left += 10;
                   div.style.left = left + 'px';
                   break;
                case 'ArrowUp':
                   if (topTop > 0) {
-                     topTop = topTop - 10;
+                     topTop -= 10;
                      div.style.top = topTop + 'px';
                   } else {
                      topTop = 0;
@@ -50,20 +50,3 @@ document.addEventListener("DOMContentLoaded", function(event) {
    const domElement = new DomElement('green', '100px', '100px', 'absolute');
    domElement.getCreate();
 });
-
-
-
-// console.log( document.documentElement.clientWidth);
-// console.log( document.documentElement.clientHeight);
-
-// var scrollHeight = Math.max(
-//    document.documentElement.clientWidth;
-//    document.documentElement.clientHeight;
-//  );
- 
-//  alert( 'Высота с учётом прокрутки: ' + scrollHeight );
-
-//  var intElemClientWidth = document.documentElement.clientWidth;
-//  var intElemClientHeight = document.documentElement.clientHeight;
-// alert(intElemClientWidth);
-// alert(intElemClientHeight);
