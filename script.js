@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
                   }
                   break;
                case 'ArrowDown':
-                  topTop  = topTop + 10;
+                  topTop  += 10;
                   div.style.top = topTop + 'px';
                   break;
                }
